@@ -2,7 +2,7 @@ const data = {
 
     properties: [
         { 
-               _id: "00000000000001",
+        _id: "00000000000001",
         index: 0,
         picture : "https://scontent-ams3-1.cdninstagram.com/vp/3c7c87c2c45a007b57a35f26ded73b1f/5C729658/t51.2885-15/sh0.08/e35/c0.135.1080.1080/s640x640/42186757_1912788165455734_2959289115620804346_n.jpg",
         model: "Rebecca",
