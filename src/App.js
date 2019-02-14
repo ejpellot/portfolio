@@ -1,28 +1,57 @@
+//Reference Tutorial ihatetomatoes 
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import data from './data';
+import Card from './Card'; 
 
 class App extends Component {
-  render() {
+  constructor(props){
+    super(props);
+    this.state = {
+      properties: data.properties,
+      property: data.properties[0]
+    }
+  }
+  //Next and Previous Button
+  nextProperty = () => {
+    const newIndex = this.state.property.index+1;
+    this.setState({property: data.properties[newIndex]})
+  }
+  prevProperty = () => {
+    const newIndex = this.state.property.index-1;
+    this.setState({property: data.properties[newIndex]})
+  }
+
+  render(){
+  const{properties, property} = this.state;
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <div className= "App">
+          
+          <button 
+           onClick = {() =>this.nextProperty()} 
+           disabled = {property.index === data.properties.length-1}>
+           Next
+           </button>
+      
+          <button
+           onClick = {() =>this.prevProperty()} 
+           disabled = {property.index === 0}>
+           Prev
+           </button>
+      
+          <div className = "page">
+             <section>
+               <h1>Edwin Pellot</h1>
+               </section>
+               <Card property = {property}/>
+      
+      
+      
+      
+            </div>
+       </div>
     );
   }
 }
 
 export default App;
+
