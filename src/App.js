@@ -26,6 +26,13 @@ class App extends Component {
   const{properties, property} = this.state;
     return (
       <div className= "App">
+      
+      <div className = "page">
+             <section>
+               <h1>Edwin Pellot</h1>
+               </section>
+               <Card property = {property}/>
+            </div>
           
           <button 
            onClick = {() =>this.nextProperty()} 
@@ -38,17 +45,6 @@ class App extends Component {
            disabled = {property.index === 0}>
            Prev
            </button>
-      
-          <div className = "page">
-             <section>
-               <h1>Edwin Pellot</h1>
-               </section>
-               <Card property = {property}/>
-      
-      
-      
-      
-            </div>
        </div>
     );
   }
