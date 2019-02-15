@@ -15,6 +15,16 @@ section{
     max-width: 600px;
     margin: 0 auto;
 }
+.cards-slider-wrapper{
+display: flex;
+}
+.cards-slider{
+    position: relative;
+    margin: 0 auto;
+    
+}
+cards-slider .card {
+    flex: 1; }
 .card{
     border: 3px white solid;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
@@ -34,9 +44,19 @@ section{
 
 }
 .butRegion{
-    display: flex;
+    display: inline-flex;
     
 }
-.button{
-
+button{
+    border-radius: 4px;
+    background-color: white;
+    border: none;
+    text-align: center;
+    font-size: 20px;
+    size: 20px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    padding: 0 auto;
+    outline: none;
 }

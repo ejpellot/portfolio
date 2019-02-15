@@ -31,7 +31,13 @@ class App extends Component {
              <section>
                <h1>Edwin Pellot</h1>
                </section>
-               <Card property = {property}/>
+               <div className= "cards-slider">
+                      <div className= "cards-slider-wrapper">
+                      {
+                        properties.map(property => <Card key = {property._id} property = {property}/>)
+                      }
+               </div>
+               </div>
             </div>
           <div className = "butRegion">
             <button
