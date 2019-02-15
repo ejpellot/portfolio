@@ -33,18 +33,19 @@ class App extends Component {
                </section>
                <Card property = {property}/>
             </div>
-          
+          <div className = "butRegion">
             <button
            onClick = {() =>this.prevProperty()} 
            disabled = {property.index === 0}>
-           Prev
+           &#8810;
            </button>
-
+            <p>Pictures</p>
           <button 
            onClick = {() =>this.nextProperty()} 
            disabled = {property.index === data.properties.length-1}>
-           Next
+           &#8811;
            </button>
+           </div>
        </div>
     );
   }

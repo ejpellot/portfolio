@@ -28,3 +28,15 @@ section{
     margin: 0 auto;
     display: block;
 }
+.card:hover{
+    border-right-color:#e4e4e4;
+    border-right-width: 1px; 
+
+}
+.butRegion{
+    display: flex;
+    
+}
+.button{
+
+}
