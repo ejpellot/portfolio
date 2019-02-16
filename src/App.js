@@ -32,9 +32,11 @@ class App extends Component {
                <h1>Edwin Pellot</h1>
                </section>
                <div className= "cards-slider">
-                      <div className= "cards-slider-wrapper">
+                      <div className= "cards-slider-wrapper" style={{
+                  'transform': `translateX(-${property.index*(100/properties.length)}%)` /*Slides The slide-wrapper Component on the X axis */
+                }}>
                       {
-                        properties.map(property => <Card key = {property._id} property = {property}/>)
+                        properties.map(property => <Card key = {property._id} property = {property}/>) /*Displays Cards through Loop */
                       }
                </div>
                </div>
