@@ -1,6 +1,7 @@
 //Reference Tutorial ihatetomatoes 
 import React, { Component } from 'react';
 import './App.css';
+import './App.scss';
 import data from './data';
 import Card from './Card'; 
 
@@ -31,7 +32,7 @@ class App extends Component {
              <section>
                <h1>Edwin Pellot</h1>
                </section>
-               <div className= "cards-slider">
+               <div className= {`cards-slider active-slide-${property.index}`}>
                       <div className= "cards-slider-wrapper" style={{
                   'transform': `translateX(-${property.index*(100/properties.length)}%)` /*Slides The slide-wrapper Component on the X axis */
                 }}>
