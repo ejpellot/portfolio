@@ -15,22 +15,20 @@ section{
     max-width: 600px;
     margin: 0 auto;
 }
-.cards-slider-wrapper{
-display: flex;
-}
+
 .cards-slider{
     position: relative;
     margin: 0 auto;
+    width: 320px;
+    height: 400px;
     
 }
-cards-slider .card {
-    flex: 1; }
 .card{
     border: 3px white solid;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
     cursor: pointer;
     transition: all 0.3s linear;
-    max-width: 300px;
+    min-width: 300px;
     padding: 10px;
 }
 .card img{
