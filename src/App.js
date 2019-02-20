@@ -26,13 +26,30 @@ class App extends Component {
   render(){
   const{properties, property} = this.state;
     return (
+      
       <div className= "App">
       
       <div className = "page">
+      
+     
              <section>
                <h1>Edwin Pellot</h1>
                </section>
+               <div className = "butRegion">
+            <button className= "button lb"
+           onClick = {() =>this.prevProperty()} 
+           disabled = {property.index === 0}>
+           &#8810;
+           </button>
+          
+          <button className= "button rb"
+           onClick = {() =>this.nextProperty()} 
+           disabled = {property.index === data.properties.length-1}>
+           &#8811;
+           </button>
+           </div>
                <div className = "col grad">
+               
                <div className= {`cards-slider active-slide-${property.index}`}>
                       <div className= "cards-slider-wrapper" style={{
                   'transform': `translateX(-${property.index*(100/properties.length)}%)` /*Slides The slide-wrapper Component on the X axis */
@@ -44,19 +61,6 @@ class App extends Component {
                </div>
                </div>
             </div>
-          <div className = "butRegion">
-            <button
-           onClick = {() =>this.prevProperty()} 
-           disabled = {property.index === 0}>
-           &#8810;
-           </button>
-            <p>Pictures</p>
-          <button 
-           onClick = {() =>this.nextProperty()} 
-           disabled = {property.index === data.properties.length-1}>
-           &#8811;
-           </button>
-           </div>
        </div>
     );
   }

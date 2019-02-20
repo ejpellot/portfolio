@@ -19,7 +19,7 @@ section{
 .cards-slider{
     position: relative;
     margin: 0 auto;
-    width: 320px;
+    width: 325px;
     height: 400px;
     
 }
@@ -45,20 +45,31 @@ section{
     display: block;
 }
 .butRegion{
-    display: inline-flex;
-    padding-top: 10%;
+    position: absolute;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    width: 90%;
+    height: 295px;
+
+    padding-top: 60px;
+    z-index: 3;
+    
     
 }
 button{
-    border-radius: 4px;
-    background-color: white;
-    border: none;
-    text-align: center;
-    font-size: 20px;
-    size: 20px;
-    transition: all 0.5s;
-    cursor: pointer;
-    margin: 5px;
-    padding: 0 auto;
-    outline: none;
+position: relative;
+width: 300px;
+height: 280px;
+opacity: 0;
+}
+.button:hover{
+    cursor: pointer; 
+}
+
+.rb{
+    margin-left: 400px;
+
 }
