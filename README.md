@@ -12,6 +12,6 @@ I completely understand HTML and CSS but I still want to work on my javascript s
 
 More ideas will come!
 
-##Conclusion
+## Conclusion
 
 This project is for me to learn and understand Web Developement with a practical excerise. 
