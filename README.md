@@ -1,4 +1,3 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Portfolio
 The whole idea for this project is to create my first ever portfolio which will highlight my photography and web design.
