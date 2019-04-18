@@ -8,7 +8,12 @@ const Card = ({property}) => {
             <img src={picture} alt={model} />
             <div className="details">
                 <p className="location">
-                    {model}<br />
+                <div className = "descript">
+                
+                {model}
+                </div>
+                    
+                    <br />
                     {date}
                 </p>
             </div>

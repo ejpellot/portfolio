@@ -4,10 +4,12 @@
   "private": true,
   "dependencies": {
     "instafeed.js": "^1.4.1",
+    "netlify-cli": "^2.11.11",
     "node-sass": "^4.11.0",
     "react": "^16.8.1",
     "react-dom": "^16.8.1",
-    "react-scripts": "2.1.5"
+    "react-router-dom": "^5.0.0",
+    "react-scripts": "^2.1.8"
   },
   "scripts": {
     "start": "react-scripts start",
